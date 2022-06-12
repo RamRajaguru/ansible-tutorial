@@ -1,0 +1,15 @@
+---
+- hosts: all
+  tasks:
+  - name: delete group
+    group:
+      name: star 
+      state: absent
+  - name: delete a user
+    user:
+      name: "{{ item }}"
+      state: absent
+      groups: "star"
+    loop:
+      - 'kamal'
+      - 'rajini'

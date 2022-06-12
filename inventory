@@ -1,0 +1,7 @@
+[master]
+ubnt-kube-master01
+ubnt-kube-master02
+[data]
+ubnt-kube-data01
+ubnt-kube-data02
+ubnt-kube-data03
